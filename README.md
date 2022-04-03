@@ -583,7 +583,6 @@ static void RenderSceneCB()
 ```
 ### Описание
 Вызывается **[glClear](#glclear)** с параметром **`(GL_COLOR_BUFFER_BIT)`**, который очищает буфер для *GL_COLOR_BUFFER_BIT*.  
-
 Вызывается **[glEnableVertexAttribArray](#glenablevertexattribarray-gldisablevertexattribarray--gldisablevertexarrayattrib-glenablevertexarrayattrib)** включает универсальный массив атрибутов вершины, использует для операции привязанный в данный момент объект массива вершин.  
 
 Вызывается **[glBindBuffer](#glbindbuffer)** с параметрами **`(GL_ARRAY_BUFFER, VBO)`** который устанавливает *GL_ARRAY_BUFFER* (Атрибуты вершин) и *VBO* привязывает это имя объекта буфера к целевому объекту.  
@@ -594,7 +593,7 @@ static void RenderSceneCB()
 
 Вызывается **[glDisableVertexAttribArray](#glenablevertexattribarray-gldisablevertexattribarray--gldisablevertexarrayattrib-glenablevertexarrayattrib)** выключает универсальный массив атрибутов вершины, использует для операции привязанный в данный момент объект массива вершин.  
 
-**[glutSwapBuffers](#glutswapbuffers)** меняет местами буферы текущего окна при двойной буферизации.  
+Вызывает **[glutSwapBuffers](#glutswapbuffers)**, который меняет местами буферы текущего окна при двойной буферизации.  
 
 ***
 
